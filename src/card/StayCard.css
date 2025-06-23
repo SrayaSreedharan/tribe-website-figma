@@ -1,0 +1,106 @@
+.stay-card {
+  background: white;
+  border: 1px solid #d6e8df;
+  width: 321.13px;
+  height: 519px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+.stay-options{
+    background-color: #F7F8F4;
+    height: 742px;
+    width: 1920px;
+    padding-top: 120px;
+    padding-right: 160px;
+    padding-bottom: 120px;
+    padding-left: 160px;
+    gap: 80px;
+    h2{
+        width: 800px;
+        height: 32px;
+        color: #103733;
+        font-family: 'Dela Gothic One', sans-serif;
+        font-weight: 400;
+        font-size: 44px;
+        letter-spacing: 1.5%;
+        margin-left: 150px ;  
+    }
+    p{
+        height: 43px;
+        width: 800px;
+        font-weight: 400px;
+        font-size: 22px;
+        font-family: 'Inter', sans-serif;  
+    } 
+}
+.stay-card img {
+   width: 321.13px;
+   height: 196px;
+   display: flex;
+}
+.card-content {
+  padding-top: 40px;
+  padding-right: 32px;
+  padding-left: 32px;
+  display: flex;
+  flex-direction: column;
+}
+.card-content h3 {
+  font-family: 'Dela Gothic One', sans-serif;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #003b2b;
+}
+
+.card-content p {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #444;
+  height: 69px;
+  width: 257.13px;
+}
+.card-content button {
+    background-color: #ffd700;
+    font-family: 'Inter', sans-serif;
+    color: #000;
+    height: 54px;
+    width: 169.32px;
+    padding-left: 40;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    padding-right: 40px;
+    font-weight: 600;
+    font-size:18px ;
+    gap: 10px;
+    margin-top: 18px;
+}
+.card-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;                       
+  justify-content: center; 
+  gap: 105px;               
+  padding: 20px;
+}
+.stay-option{
+  height: 1420px;
+  width: 1920px;
+  padding-top: 120px;
+    padding-right: 160px;
+    padding-bottom: 120px;
+    padding-left: 160px;
+    h2{
+      width: 800px;
+        height: 32px;
+        color: #103733;
+        font-family: 'Dela Gothic One', sans-serif;
+        font-weight: 400;
+        font-size: 44px;
+        letter-spacing: 1.5%;
+        margin-left: 150px ; 
+    }
+}
+

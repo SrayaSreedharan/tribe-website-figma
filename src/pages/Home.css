@@ -1,0 +1,339 @@
+@font-face {
+  font-family: 'Euclid Circular A';
+  src: url('/fonts/EuclidCircularA-Regular.woff2') format('woff2'),
+       url('/fonts/EuclidCircularA-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Euclid Circular A';
+  src: url('/fonts/EuclidCircularA-Bold.woff2') format('woff2'),
+       url('/fonts/EuclidCircularA-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+body{
+    background-color: #D0D6BC;
+}
+.home{
+    background-image: url('C:\Users\sraya\OneDrive\Desktop\www\Tribe-website-figma\src\images\Maskgroup.webp');
+    background-size: cover;
+    background-position: center;
+    height: 902px;  
+    width: 1920px;
+}
+h1{
+    font-size: 85px;
+    color: white;
+    font-family: 'Dela Gothic One', sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-decoration: none;
+    gap: 5px;
+    margin-top: 270px;
+}
+.txt-explor{
+    height: 179px;
+    width: 1125px;
+    margin-left: 100px;
+    gap: 160px;
+}
+.view{
+  font-size: 24px;
+  font-weight: 600;
+  background-color: #fcd21c;
+  font-family: 'Inter', sans-serif;
+  color: #103733;
+  border: none;
+  height: 80px;
+  width:413.32px;
+  padding-top: 24px;
+  padding-right: 64px;
+  padding-left: 64px;
+  padding-bottom: 16px;
+  margin-right: 60px;
+  font-weight: bold;
+}
+.txt-para{
+    height: 439px;
+    width: 720px;
+    gap: 56px;
+    p{
+        height: 178px;
+        width: 720px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 100%;
+        line-height: 32.7px        
+    }
+}
+h2{
+         font-family: 'Dela Gothic One', sans-serif;
+         font-weight: 400;
+         font-size: 44px;
+         line-height: 32.7px;
+         letter-spacing: 1.5%;
+}
+.second-sect{
+    display: flex;
+    width: 1920px;
+    padding-top: 120px;
+    padding-right: 160px;
+    padding-bottom: 120px;
+    padding-left: 160px;
+    gap: 240px;
+    height: 691px;
+}
+.btn-3{
+    width: 370px;
+    height: 68px;
+    font-family: 'Inter', sans-serif;
+    background-color: #FFD323;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0.3%;
+    color: #103733;
+    gap: 16px;
+    padding-top: 16px;
+    padding-right: 64px;
+    padding-bottom: 16px;
+    padding-left: 64px;
+    margin-top: 70px;
+    border: none;
+}
+.container > div{
+    width: 1920px;
+    height: 451px;
+    justify-content: space-between;
+    padding-top: 120px;
+    padding-right: 160px;
+    padding-bottom: 120px;
+    padding-left: 160px;
+    p{
+        font-family: 'Dela Gothic One', sans-serif;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 180%;
+        margin: auto;
+        text-align: center;
+        height: 255px;
+        width: 1181px;
+        gap: 56px;
+    }
+    span{
+        color: #127669;
+    }
+}
+.ourvision{
+    width: 1920px;
+    height: 451px;
+    justify-content: space-between;
+    padding-top: 120px;
+    padding-right: 160px;
+    padding-bottom: 120px;
+    padding-left: 160px;
+    background-color: #103733;
+    display: flex;
+    justify-content: center;   
+    align-items: center;      
+    flex-direction: column;  
+    text-align: center;    
+     h3{
+            font-family: 'Dela Gothic One', sans-serif;
+            color: white;
+            font-weight: 400;
+            font-size: 56px;
+            gap: 24px;
+            width: 715px;
+            height: 41px;
+            line-height: 100%;
+            text-align: center;   
+            text-align: center;
+        }
+      p{
+            font-weight: 400;
+            font-family: 'Euclid Circular A', sans-serif;
+            font-size: 22px;
+            height: 72px;
+            width: 715px;
+            text-align: center;
+            text-align: justify;
+            color: white;
+        }
+}
+.list-item{
+    display: flex;
+    align-items: center;        
+    justify-content: center; 
+    padding-top: 120px;
+    padding-right: 160px;
+    padding-bottom: 120px;
+    padding-left: 160px;
+    height: 691px;
+    width: 1920px;
+    gap: 240px;
+    list{
+        gap: 56px;
+        height: 418px;
+        width: 720px;
+    }
+}
+ul{
+    height: 330px;
+    width: 720px;
+}
+ul > li{
+   font-family: 'Inter', sans-serif;
+   font-weight: 500;
+   font-size: 22px;
+   color: #676767;
+}
+ul > li:not(:last-child) {
+  margin-bottom: 32px;
+}
+.younggirl{
+    background: linear-gradient(#00000099, #00000099), url('C:\Users\sraya\OneDrive\Desktop\www\Tribe-website-figma\src\images\younggirl.jpg');
+    position: relative;
+    object-fit: cover;   
+    width: 1920px;
+    height: 560px;
+    background-size: cover;
+    background-position: center;
+}
+.outlined {
+         font-weight: 800;
+         color: transparent;
+        -webkit-text-stroke: 2px white;
+}
+.younggirl > div{
+    height: 224px;
+    width: 799px;
+    padding-left: 961px;
+    h4{
+       font-family: 'Dela Gothic One', sans-serif;
+            color: white;
+            font-weight: 400;
+            font-size: 56px;
+            gap: 24px;
+            width: 715px;
+            height: 41px;
+            padding-top: 171px;
+            letter-spacing: 2%;
+    }
+    p{
+        font-weight: 400;
+            font-family: 'Euclid Circular A', sans-serif;
+            font-size: 22px;
+            height: 44px;
+            width: 799px;
+            text-align: center;
+            text-align: justify;
+            color: white; 
+    }
+}
+.cater-section {
+        width: 1920px;
+        height: 1324px;
+        padding-top: 120px;
+        padding-right: 160px;
+        padding-bottom: 120px;
+        padding-left: 160px;
+        gap: 112px;     
+}
+.mainhead{
+        height: 104px;
+        width: 800px;
+        gap: 56px;
+        margin-left: 160px;
+        p{
+           font-family: 'Inter', sans-serif;
+           font-weight: 400;
+           font-size: 22px; 
+           color: #676767;
+        }
+}        
+.cater-section > .mainhead > h2 {
+  font-family: 'Dela Gothic One', sans-serif;
+  color: #0b3c35;
+  font-weight: 400;
+  width: 800px;
+  height: 32px;
+  letter-spacing: 1.5;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 120px auto 0 auto; 
+  width: 1600px;
+  height: 868px;
+  gap: 96px; 
+  margin-top: 120px;
+}
+.card {
+  background: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  overflow: hidden;
+  width: 463.33px;
+  height: 386px;
+  gap: 105px;
+}
+.card img {
+  width:463.33px;
+  height: 196px;
+  object-fit: cover;
+  object-position: top;
+}
+.card h3 {
+  font-family: 'Dela Gothic One', sans-serif;
+  margin: 1rem;
+  color: #0b3c35;
+}
+.card p {
+  font-family: 'Inter', sans-serif;
+  color: #676767;
+  margin: 1rem;
+  font-size: 16px;
+  height: 31px;
+  font-weight: 400;
+  width: 399.33px;
+}
+.manmount{
+    background: linear-gradient(#00000099, #00000099), url('C:\Users\sraya\OneDrive\Desktop\www\Tribe-website-figma\src\images\manmounting.jpg');
+    width: 1920px;
+    height: 658px;
+    position: relative;
+    object-fit: cover;   
+    background-size: cover;
+    background-position: center;  
+}
+.manmount > div {
+        width: 799px;
+        height: 445px;
+        padding-top: 109px;
+        padding-left: 160px;
+        gap: 24px;
+        h4{
+            width: 715px;
+            height: 122px;
+             font-family: 'Dela Gothic One', sans-serif;
+            font-weight: 400px;
+            font-size: 56px;
+            color: white;  
+        }
+        p{
+            font-family: 'Euclid Circular A', sans-serif;
+             font-weight: 400px;
+             font-size: 22px;
+             width: 799px;
+             height: 72px;
+             color: #FFFFFF;
+             line-height: 1.3;
+        }
+}
+
+
+
