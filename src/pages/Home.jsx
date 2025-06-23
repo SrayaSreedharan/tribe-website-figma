@@ -22,9 +22,6 @@ import natural from '../images/naturalwalk.jpg';
 import water from '../images/waterfall.jpg';
 import stonebalance from '../images/stonebalance.jpg';
 
-
-
-
 const Home = () => {
   const cardData = [
     {
@@ -219,8 +216,8 @@ const Home = () => {
               /> 
             ))}
           </div>
-        </section>
-      </>
+  </section>
+  </>
   )
 }
 export default Home
