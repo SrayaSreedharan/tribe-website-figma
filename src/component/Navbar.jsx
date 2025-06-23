@@ -11,11 +11,11 @@ const Navbar = () => {
     </div>
   </div>
   <div className='containers'>
-  <header className="navbar">
+  <header className="navbars">
     <div className="logo">
       SUELO <span className="spiral">🌀</span> TRIBE
     </div>
-    <nav className="nav-links">
+    <nav className="nav-link">
       <a href="#">Home</a>
       <a href="#">About Us</a>
       <a href="#">Explore</a>

@@ -1,84 +1,84 @@
 .containers{
-  max-width: 1600px;
-  margin: 0 auto;
+          max-width: 1600px;
+          margin: 0 auto;
 }
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+      margin: 0;
+      font-family: Arial, sans-serif;
 }
 .top-bar {
-  color: white;
-  font-size: 14px;
-  padding: 5px 20px;
-  display: flex;
-  justify-content: flex-end; 
+        color: white;
+        font-size: 14px;
+        padding: 5px 20px;
+        display: flex;
+        justify-content: flex-end; 
 }
 .contact-info span {
-  margin-left: 20px;
-  margin-top: 10px;
-  margin-right: 60px;
-  justify-content: center;
+          margin-left: 20px;
+          margin-top: 10px;
+          margin-right: 60px;
+          justify-content: center;
 }
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: white;
-  padding: 15px 20px;
-  border-top: 1px solid rgba(0, 0, 0, 0.6); 
+.navbars {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        padding: 15px 20px;
+        border-top: 1px solid rgba(0, 0, 0, 0.6); 
 }
 .logo {
-  font-size: 22px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  margin-left: 60px;
+        font-size: 22px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        margin-left: 60px;
 }
 .spiral {
-  color: #fcd21c;
-  font-size: 24px;
-  vertical-align: middle;
+        color: #fcd21c;
+        font-size: 24px;
+        vertical-align: middle;
 }
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  font-family: 'Inter', sans-serif;
+.nav-link {
+          display: flex;
+          align-items: center;
+          gap: 24px;
+          font-family: 'Inter', sans-serif;
 }
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  padding: 8px;
-  transition: background 0.3s;
+.nav-link a {
+          color: white;
+          text-decoration: none;
+          padding: 8px;
+          transition: background 0.3s;
 }
-.nav-links a:hover {
-  border-radius: 5px;
+.nav-link a:hover {
+         border-radius: 5px;
 }
 .dropdown {
-  position: relative;
+         position: relative;
 }
 .dropbtn {
-  background: none;
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
+        background: none;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
 }
 .book-now {
-  background-color: #fcd21c;
-  color: #103733;
-  border: none;
-  height: Hug (59px);
-  width:Hug (216px);
-  padding-top: 16px;
-  padding-right: 64px;
-  padding-left: 64px;
-  padding-bottom: 16px;
-  margin-right: 60px;
-  font-family: 'Inter', sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  cursor: pointer;
+        background-color: #fcd21c;
+        color: #103733;
+        border: none;
+        height: Hug (59px);
+        width:Hug (216px);
+        padding-top: 16px;
+        padding-right: 64px;
+        padding-left: 64px;
+        padding-bottom: 16px;
+        margin-right: 60px;
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
 }
 .book-now:hover {
-  background-color: #e6b800;
+       background-color: #e6b800;
 }

@@ -21,6 +21,9 @@ import camping from '../images/camping.jpg';
 import natural from '../images/naturalwalk.jpg';
 import water from '../images/waterfall.jpg';
 import stonebalance from '../images/stonebalance.jpg';
+import rock from '../images/rockpoint.jpg';
+import lake from '../images/lakeview.png';
+import kandi from '../images/900kandi.png';
 
 const Home = () => {
   const cardData = [
@@ -171,28 +174,28 @@ const Home = () => {
             <h2>Who We Cater To</h2>
             <p>At SueloTribe, we welcome</p>
         </div>
-    <div className="card-grid">
-      <div className="card">
+    <div className="cards-grid">
+      <div className="cards">
         <img src={family} alt="Families" />
         <h3>Families</h3>
         <p>Enjoy a family getaway filled with nature walks, wildlife spotting, and bonding over campfires.</p>
       </div>
-      <div className="card">
+      <div className="cards">
         <img src={couple} alt="Couples" />
         <h3>Couples</h3>
         <p>Find romantic seclusion with scenic views and peaceful surroundings, ideal for rekindling your connection.</p>
       </div>
-      <div className="card">
+      <div className="cards">
         <img src={friends} alt="Families" />
         <h3>Bachelors & Friends Groups</h3>
         <p>Take a break from routine and create unforgettable memories with friends, exploring trails and gathering around bonfires.</p>
       </div>
-      <div className="card">
+      <div className="cards">
         <img src={collage} alt="Families" />
         <h3>College Trips</h3>
         <p>A perfect destination for college groups, SueloTribe offers adventure, nature, and team activities to bring students closer to nature.</p>
       </div>
-      <div className="card">
+      <div className="cards">
         <img src={day} alt="Families" />
         <h3>Day Trips</h3>
         <p>Short on time? Plan a day trip to experience the essence of Wayanad, complete with guided nature walks, scenic viewpoints, and refreshing picnic spots.</p>
@@ -221,6 +224,48 @@ const Home = () => {
             ))}
           </div>
   </section>
+  </div>
+  <div className='containers'>
+   <section className="rooms">
+    <p className="subtitle">Plan Your Next Stay</p>
+    <h1>Experience the Great{<br></br>}Outdoors</h1>
+    <p className="description">From rooms to huts - find the perfect spot for your next getaway</p>
+    <div className="nav-row">
+      <div className="nav-links">
+        <a href="#" className="active">All</a>
+        <a href="#">Rooms</a>
+        <a href="#">Tree Huts</a>
+        <a href="#">Huts</a>
+        <a href="#">Tents</a>
+      </div>
+    </div>
+  <section className="card-grids">
+    <div className="card">
+      <img src={rock} alt="Rock Point Site"/>
+      <div className="card-body">
+        <h2>Rock Point Site</h2>
+        <p>₹ 900 / a day</p>
+        <button>View Site →</button>
+      </div>
+    </div>
+    <div className="card">
+      <img src={lake} alt="Pookode Lake View"/>
+      <div className="card-body">
+        <h2>Pookode Lake View</h2>
+        <p>₹ 1200 per person</p>
+        <button>View Site →</button>
+      </div>
+    </div>
+    <div className="card">
+      <img src={kandi} alt="900 Kandi Stay"/>
+      <div className="card-body">
+        <h2>900 Kandi Stay</h2>
+        <p>₹ 900 / a night</p>
+        <button>View Site →</button>
+      </div>
+    </div>
+  </section>
+   </section>
       </div>
   </>
   )

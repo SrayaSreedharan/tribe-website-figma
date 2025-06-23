@@ -13,7 +13,7 @@
   font-style: normal;
 }
 body{
-    background-color: #D0D6BC;
+    background-color:black;
     margin: 0 auto;
 }
 .home{
@@ -82,6 +82,7 @@ h2{
     padding-bottom: 120px;
     padding-left: 160px;
     gap: 30px;
+    background-color: #D0D6BC;
     height: 691px;
 }
 .btn-3{
@@ -105,6 +106,7 @@ h2{
 .container > div{
     height: 451px;
     justify-content: space-between;
+    background-color: #D0D6BC;
     p{
         font-family: 'Dela Gothic One', sans-serif;
         font-weight: 400;
@@ -166,10 +168,11 @@ h2{
     padding-left: 160px;
     height: 691px;
     gap: 30px;
+    background-color: #D0D6BC;
     list{
         gap: 56px;
         height: 418px;
-        width: 720px;
+        width: 720px;  
     }
 }
 ul{
@@ -192,6 +195,7 @@ ul > li:not(:last-child) {
     height: 560px;
     background-size: cover;
     background-position: center;
+    padding-top: 109px;
 }
 .outlined {
          font-weight: 800;
@@ -210,7 +214,6 @@ ul > li:not(:last-child) {
             gap: 24px;
             width: 715px;
             height: 41px;
-            padding-top: 171px;
             letter-spacing: 2%;
     }
     p{
@@ -230,6 +233,7 @@ ul > li:not(:last-child) {
         padding-right: 160px;
         padding-bottom: 120px;
         padding-left: 160px;
+        background-color: #D0D6BC;
 }
 .mainhead{
         height: 104px;
@@ -243,59 +247,56 @@ ul > li:not(:last-child) {
         }
 }        
 .cater-section > .mainhead > h2 {
-  font-family: 'Dela Gothic One', sans-serif;
-  color: #0b3c35;
-  font-weight: 400;
-  width: 800px;
-  height: 32px;
-  letter-spacing: 1.5;
+          font-family: 'Dela Gothic One', sans-serif;
+          color: #0b3c35;
+          font-weight: 400;
+          width: 800px;
+          height: 32px;
+          letter-spacing: 1.5;
 }
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 120px auto 0 auto; 
-  width: 1600px;
-  height: 868px;
-  gap: 96px; 
-  margin-top: 120px;
+.cards-grid {
+          display: flex;
+          margin: 0 auto; 
+          flex-wrap: wrap;
+          max-width:1600px;
+          height: 868px;
+          gap: 10px;
+          margin-top: 120px;
 }
-.card {
-  background: white;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  border-radius: 6px;
-  overflow: hidden;
-  width: 463.33px;
-  height: 386px;
-  gap: 105px;
+.cards {
+          background: white;
+          box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+          overflow: hidden;
+          width: 410px;
+          height: 386px;
 }
-.card img {
-  width:463.33px;
-  height: 196px;
-  object-fit: cover;
-  object-position: top;
+.cards img {
+          width:410px;
+          height: 196px;
+          object-fit: cover;
+          object-position: top;
 }
-.card h3 {
-  font-family: 'Dela Gothic One', sans-serif;
-  margin: 1rem;
-  color: #0b3c35;
+.cards h3 {
+          font-family: 'Dela Gothic One', sans-serif;
+          margin: 1rem;
+          color: #0b3c35;
 }
-.card p {
-  font-family: 'Inter', sans-serif;
-  color: #676767;
-  margin: 1rem;
-  font-size: 16px;
-  height: 31px;
-  font-weight: 400;
-  width: 399.33px;
+.cards p {
+        font-family: 'Inter', sans-serif;
+        color: #676767;
+        margin: 15px;
+        font-size: 16px;
+        height: 31px;
+        font-weight: 400;
+        max-width:399.33px;
 }
 .manmount{
-    background: linear-gradient(#00000099, #00000099), url('../images/manmounting.jpg');
-    height: 658px;
-    object-position: top;
-    position: relative;
-    /* object-fit: cover;    */
-    background-size: cover;
-    background-position: center;  
+        background: linear-gradient(#00000099, #00000099), url('../images/manmounting.jpg');
+        height: 658px;
+        object-position: top;
+        position: relative;
+        background-size: cover;
+        background-position: center;  
 }
 .manmount > div {
         width: 799px;
@@ -306,8 +307,9 @@ ul > li:not(:last-child) {
         h4{
             width: 715px;
             height: 122px;
-             font-family: 'Dela Gothic One', sans-serif;
+            font-family: 'Dela Gothic One', sans-serif;
             font-weight: 400px;
+            margin-top: -30px;
             font-size: 56px;
             color: white;  
         }
@@ -321,6 +323,97 @@ ul > li:not(:last-child) {
              line-height: 1.3;
         }
 }
+.rooms{
+        background-color: #D0D6BC;
+        padding-top: 60px;
+}
+.subtitle {
+        color: #127669;
+        font-weight: 400;
+        font-size: 24px;
+        font-family: 'Inter', sans-serif;
+        margin-left: 140px;
+}
+.rooms h1 {
+        font-size:44px;
+        font-weight: 400;
+        font-family: 'Dela Gothic One', sans-serif;
+        color: #103733;
+        line-height: 1.2;
+        margin-left: 140px;
+}
+.description {
+          margin: 1rem 0 2rem;
+          color: #555;
+          margin-left: 140px;
+          font-size: 24px;
+          font-weight: 400;
+}
+.nav-row {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 2rem;
+}
+.nav-links {
+        display: flex;
+        align-items: center;
+        gap: 24px;  
+}
+.nav-links a{
+        text-decoration: none;
+        color: #676767;
+        align-items: center;
+        padding: 8px;
+        font-family: 'Inter', sans-serif;
+}
+.card-grids {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 1600px;
+        height: 547px;
+        gap: 40px;
+        margin-top: 120px;
+}
+.card {
+        background: white;
+        background: white;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        overflow: hidden;
+        width: 410px;
+        height: 460px;
+  
+}
+.card img {
+        width: 507px;
+        max-height: 290px;
+        object-fit: cover;
+}
+.card-body {
+        padding: 1rem;
+        width: 507px;
+        max-height:227px;
+}
+.card-body h2 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+}
+.card-body p {
+        color: #1a2c23;
+        font-size: 0.95rem;
+        margin-bottom: 1rem;
+}
+button {
+        background: #ffd700;
+        border: none;
+        padding: 0.5rem 1rem;
+        font-weight: bold;
+        border-radius: 4px;
+        cursor: pointer;
+}
+
 
 
 
