@@ -1,8 +1,8 @@
 import React from 'react'
 import Navbar from '../component/Navbar'
 import '../pages/Home.css'
-import frame83 from  '../images/frame83.png'
-import frame84 from  '../images/frame84.png'
+import frame83 from  '../images/Frame83.png'
+import frame84 from  '../images/Frame84.png'
 import StayCard from '../card/Staycard';
 import room from '../images/Frame78.png';
 import tree from '../images/Frame79.png';
