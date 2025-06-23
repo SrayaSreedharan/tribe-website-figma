@@ -86,14 +86,15 @@
   padding: 20px;
 }
 .stay-option{
-  height: 1420px;
-  width: 1920px;
-  padding-top: 120px;
+    background-color: #F7F8F4;
+    height: 1420px;
+    width: 1920px;
+    padding-top: 120px;
     padding-right: 160px;
     padding-bottom: 120px;
     padding-left: 160px;
     h2{
-      width: 800px;
+        width: 800px;
         height: 32px;
         color: #103733;
         font-family: 'Dela Gothic One', sans-serif;
