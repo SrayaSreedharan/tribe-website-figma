@@ -98,15 +98,17 @@ const Home = () => {
   ]
   return (
     <>
+    <div className='containers'>
     <div className='home'>
-          <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet"/>
-          <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+          
         <Navbar/>
         <div className='txt-explor'>
         <h1>Explore.{<br></br>}Experience. Evolve.</h1>
         <button className="view" >View Accomadation --</button>
         </div>
     </div>
+    </div>
+    <div className='containers'>
     <div className='second-sect'>
         <div className='txt-para'>
             <h3 style={{color:'#127669'}}>A Nature-Inspired Travel Company</h3>
@@ -118,6 +120,8 @@ const Home = () => {
             <img src={frame83} height="451" width="640"></img>
         </div>
     </div>
+    </div>
+    <div className='containers'>
     <div className='container'>
       <div>
           <p>Located in the heart of<span> Wayanad’s stunning landscape, SueloTribe</span> offers you an immersive experience in the lap of nature. Surrounded by cardamom plantations, dense forests, and misty hills, our retreat is perfect for anyone looking to escape the hustle and bustle of city life.</p>
@@ -150,7 +154,7 @@ const Home = () => {
     </div>
     <section className="stay-options">
           <h2>Stay Options</h2>
-          <p style={{marginLeft:'150px'}}>Explore unique accommodation options tailored to make your stay memorable and comfortable:</p>
+          <p >Explore unique accommodation options tailored to make your stay memorable and comfortable:</p>
           <div className="card-container">
             {cardData.map((card, index) => (
               <StayCard
@@ -205,7 +209,7 @@ const Home = () => {
   </div>
   <section className="stay-option">
           <h2>Our Activities</h2>
-          <div className="card-container">
+          <div className="card-containers">
             {cardDatas.map((card, index) => (
               <StayCard
                 key={index}
@@ -217,6 +221,7 @@ const Home = () => {
             ))}
           </div>
   </section>
+      </div>
   </>
   )
 }

@@ -10,12 +10,10 @@
 .stay-options{
     background-color: #F7F8F4;
     height: 742px;
-    width: 1920px;
     padding-top: 120px;
     padding-right: 160px;
     padding-bottom: 120px;
     padding-left: 160px;
-    gap: 80px;
     h2{
         width: 800px;
         height: 32px;
@@ -23,8 +21,7 @@
         font-family: 'Dela Gothic One', sans-serif;
         font-weight: 400;
         font-size: 44px;
-        letter-spacing: 1.5%;
-        margin-left: 150px ;  
+        letter-spacing: 1.5%;  
     }
     p{
         height: 43px;
@@ -53,7 +50,6 @@
   font-weight: 400;
   color: #003b2b;
 }
-
 .card-content p {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
@@ -80,19 +76,15 @@
 .card-container{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;                       
   justify-content: center; 
-  gap: 105px;               
+  gap: 10px;               
   padding: 20px;
 }
 .stay-option{
     background-color: #F7F8F4;
     height: 1420px;
-    width: 1920px;
     padding-top: 120px;
-    padding-right: 160px;
     padding-bottom: 120px;
-    padding-left: 160px;
     h2{
         width: 800px;
         height: 32px;
@@ -101,7 +93,15 @@
         font-weight: 400;
         font-size: 44px;
         letter-spacing: 1.5%;
-        margin-left: 150px ; 
+        margin-left: 120px;  
     }
+}
+.card-containers{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;                       
+  justify-content: center; 
+  gap: 10px;               
+
 }
 

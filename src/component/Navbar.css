@@ -1,3 +1,7 @@
+.containers{
+  max-width: 1600px;
+  margin: 0 auto;
+}
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -6,7 +10,6 @@ body {
   color: white;
   font-size: 14px;
   padding: 5px 20px;
-  background-color: rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: flex-end; 
 }
@@ -20,7 +23,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.6);
   color: white;
   padding: 15px 20px;
   border-top: 1px solid rgba(0, 0, 0, 0.6); 

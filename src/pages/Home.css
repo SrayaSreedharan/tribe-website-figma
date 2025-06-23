@@ -14,13 +14,13 @@
 }
 body{
     background-color: #D0D6BC;
+    margin: 0 auto;
 }
 .home{
-    background-image: url('C:\Users\sraya\OneDrive\Desktop\www\Tribe-website-figma\src\images\Maskgroup.webp');
+    background-image:url('../images/Maskgroup.webp');
     background-size: cover;
     background-position: center;
-    height: 902px;  
-    width: 1920px;
+    min-height: 902px;  
 }
 h1{
     font-size: 85px;
@@ -49,10 +49,6 @@ h1{
   border: none;
   height: 80px;
   width:413.32px;
-  padding-top: 24px;
-  padding-right: 64px;
-  padding-left: 64px;
-  padding-bottom: 16px;
   margin-right: 60px;
   font-weight: bold;
   margin-top: 50px;
@@ -80,12 +76,12 @@ h2{
 }
 .second-sect{
     display: flex;
-    width: 1920px;
+    justify-content: center;
     padding-top: 120px;
     padding-right: 160px;
     padding-bottom: 120px;
     padding-left: 160px;
-    gap: 240px;
+    gap: 30px;
     height: 691px;
 }
 .btn-3{
@@ -107,13 +103,8 @@ h2{
     border: none;
 }
 .container > div{
-    width: 1920px;
     height: 451px;
     justify-content: space-between;
-    padding-top: 120px;
-    padding-right: 160px;
-    padding-bottom: 120px;
-    padding-left: 160px;
     p{
         font-family: 'Dela Gothic One', sans-serif;
         font-weight: 400;
@@ -130,7 +121,6 @@ h2{
     }
 }
 .ourvision{
-    width: 1920px;
     height: 451px;
     justify-content: space-between;
     padding-top: 120px;
@@ -175,8 +165,7 @@ h2{
     padding-bottom: 120px;
     padding-left: 160px;
     height: 691px;
-    width: 1920px;
-    gap: 240px;
+    gap: 30px;
     list{
         gap: 56px;
         height: 418px;
@@ -197,10 +186,9 @@ ul > li:not(:last-child) {
   margin-bottom: 32px;
 }
 .younggirl{
-    background: linear-gradient(#00000099, #00000099), url('C:\Users\sraya\OneDrive\Desktop\www\Tribe-website-figma\src\images\younggirl.jpg');
+    background: linear-gradient(#00000099, #00000099), url('../images/younggirl.jpg');
     position: relative;
     object-fit: cover;   
-    width: 1920px;
     height: 560px;
     background-size: cover;
     background-position: center;
@@ -213,9 +201,9 @@ ul > li:not(:last-child) {
 .younggirl > div{
     height: 224px;
     width: 799px;
-    padding-left: 961px;
+    padding-left: 661px;
     h4{
-       font-family: 'Dela Gothic One', sans-serif;
+            font-family: 'Dela Gothic One', sans-serif;
             color: white;
             font-weight: 400;
             font-size: 56px;
@@ -226,30 +214,27 @@ ul > li:not(:last-child) {
             letter-spacing: 2%;
     }
     p{
-        font-weight: 400;
+            font-weight: 400;
             font-family: 'Euclid Circular A', sans-serif;
             font-size: 22px;
             height: 44px;
-            width: 799px;
+            width: 700px;
             text-align: center;
             text-align: justify;
             color: white; 
     }
 }
 .cater-section {
-        width: 1920px;
         height: 1324px;
         padding-top: 120px;
         padding-right: 160px;
         padding-bottom: 120px;
         padding-left: 160px;
-        gap: 112px;     
 }
 .mainhead{
         height: 104px;
         width: 800px;
         gap: 56px;
-        margin-left: 160px;
         p{
            font-family: 'Inter', sans-serif;
            font-weight: 400;
@@ -304,11 +289,11 @@ ul > li:not(:last-child) {
   width: 399.33px;
 }
 .manmount{
-    background: linear-gradient(#00000099, #00000099), url('C:\Users\sraya\OneDrive\Desktop\www\Tribe-website-figma\src\images\manmounting.jpg');
-    width: 1920px;
+    background: linear-gradient(#00000099, #00000099), url('../images/manmounting.jpg');
     height: 658px;
+    object-position: top;
     position: relative;
-    object-fit: cover;   
+    /* object-fit: cover;    */
     background-size: cover;
     background-position: center;  
 }
