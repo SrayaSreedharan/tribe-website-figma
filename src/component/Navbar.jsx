@@ -23,11 +23,6 @@ const Navbar = () => {
       <a href="#">Trips</a>
       <div className="dropdown">
         <button className="dropbtn">Activities ▾</button>
-        <div className="dropdown-content">
-          <a href="#">Hiking</a>
-          <a href="#">Kayaking</a>
-          <a href="#">Workshops</a>
-        </div>
       </div>
     </nav>
     <button className="book-now">Book Now</button>
