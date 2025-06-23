@@ -2,14 +2,14 @@
   background: white;
   border: 1px solid #d6e8df;
   width: 321.13px;
-  height: 519px;
+  min-height: 519px;
   display: flex;
   flex-direction: column;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 .stay-options{
     background-color: #F7F8F4;
-    height: 742px;
+    min-height: 742px;
     padding-top: 120px;
     padding-right: 160px;
     padding-bottom: 120px;
@@ -82,7 +82,7 @@
 }
 .stay-option{
     background-color: #F7F8F4;
-    height: 1420px;
+    min-height: 1420px;
     padding-top: 120px;
     padding-bottom: 120px;
     h2{
@@ -102,6 +102,16 @@
   flex-wrap: wrap;                       
   justify-content: center; 
   gap: 10px;               
-
+}
+@media (max-width: 600px) {
+  .stay-options > p{
+    width: 500px;
+    font-size: 12px;
+    margin-left: -80px;
+  }
+  .card-container{
+     flex-direction: column;
+    align-items: center;
+  }
 }
 

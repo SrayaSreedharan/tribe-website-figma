@@ -116,7 +116,9 @@ const Home = () => {
         <div className='txt-para'>
             <h3 style={{color:'#127669'}}>A Nature-Inspired Travel Company</h3>
             <h2>Who We Are</h2>
+            <div className='text-para'>
             <p>SueloTribe is a nature-inspired travel company dedicated to promoting responsible tourism. We blend adventure, mindfulness, and eco-friendly experiences to create meaningful connections with the environment. Rooted in the heart of Wayanad’s lush landscapes, we offer trekking, camping, experimental stays, and mindful programs to inspire sustainable living and foster unforgettable memories.</p>
+            </div>
             <button className="btn-3" >Explore package</button>
         </div>
         <div>

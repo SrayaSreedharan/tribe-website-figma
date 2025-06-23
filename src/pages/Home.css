@@ -83,7 +83,7 @@ h2{
     padding-left: 160px;
     gap: 30px;
     background-color: #D0D6BC;
-    height: 691px;
+    min-height: 691px;
 }
 .btn-3{
     width: 370px;
@@ -104,7 +104,7 @@ h2{
     border: none;
 }
 .container > div{
-    height: 451px;
+    min-height: 451px;
     justify-content: space-between;
     background-color: #D0D6BC;
     p{
@@ -114,7 +114,7 @@ h2{
         line-height: 180%;
         margin: auto;
         text-align: center;
-        height: 255px;
+        min-height: 255px;
         width: 1181px;
         gap: 56px;
     }
@@ -123,7 +123,7 @@ h2{
     }
 }
 .ourvision{
-    height: 451px;
+    min-height: 451px;
     justify-content: space-between;
     padding-top: 120px;
     padding-right: 160px;
@@ -166,7 +166,7 @@ h2{
     padding-right: 160px;
     padding-bottom: 120px;
     padding-left: 160px;
-    height: 691px;
+    min-height: 691px;
     gap: 30px;
     background-color: #D0D6BC;
     list{
@@ -190,9 +190,10 @@ ul > li:not(:last-child) {
 }
 .younggirl{
     background: linear-gradient(#00000099, #00000099), url('../images/younggirl.jpg');
+    width: 100%;
     position: relative;
     object-fit: cover;   
-    height: 560px;
+    min-height: 560px;
     background-size: cover;
     background-position: center;
     padding-top: 109px;
@@ -228,7 +229,7 @@ ul > li:not(:last-child) {
     }
 }
 .cater-section {
-        height: 1324px;
+        min-height: 1324px;
         padding-top: 120px;
         padding-right: 160px;
         padding-bottom: 120px;
@@ -259,7 +260,7 @@ ul > li:not(:last-child) {
           margin: 0 auto; 
           flex-wrap: wrap;
           max-width:1600px;
-          height: 868px;
+          min-height: 868px;
           gap: 10px;
           margin-top: 120px;
 }
@@ -268,7 +269,7 @@ ul > li:not(:last-child) {
           box-shadow: 0 4px 6px rgba(0,0,0,0.1);
           overflow: hidden;
           width: 410px;
-          height: 386px;
+          min-height: 386px;
 }
 .cards img {
           width:410px;
@@ -300,7 +301,7 @@ ul > li:not(:last-child) {
 }
 .manmount > div {
         width: 799px;
-        height: 445px;
+        min-height: 445px;
         padding-top: 109px;
         padding-left: 160px;
         gap: 24px;
@@ -372,7 +373,7 @@ ul > li:not(:last-child) {
         justify-content: center;
         flex-wrap: wrap;
         width: 1600px;
-        height: 547px;
+        min-height: 547px;
         gap: 40px;
         margin-top: 120px;
 }
@@ -413,7 +414,211 @@ button {
         border-radius: 4px;
         cursor: pointer;
 }
-
-
-
-
+@media (max-width: 600px) {
+  .second-sect {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 40px;
+    height: auto;
+  }
+  .txt-para {
+    width: 100%;
+    padding: 0 10px;
+    text-align: center;
+  }
+  .txt-para h3,.txt-para h2 {
+    font-size: 24px;
+  }
+  .text-para p {
+    font-size: 10px;
+    line-height: 1.5;
+    width: 550px;
+    height: 120px;
+  }
+  .btn-3 {
+    margin-top: -100px;
+   width: 300px;
+    height: 48px;
+    font-size: 16px;
+  }
+  .second-sect img {
+    width: 100%;
+    margin-top: -150px;
+    height: 300px;
+  }
+  .container > div > p{
+        width: 500px;
+  }
+  .ourvision> p{
+         width: 500px;
+  }
+  .list-item {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 32px;
+    height: auto;
+  }
+  .list-item img {
+    width: 100%;
+    height: auto;
+  }
+  .list {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .list h2 {
+    font-size: 24px ;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .list ul {
+    padding-left: 20px;
+  }
+  .list ul li {
+    font-size: 16px ;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    width: 500px;
+  }
+  .younggirl {  
+    height: auto ;
+    padding: 60px 16px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .younggirl > div {
+    width: 400px;
+    padding: 0; 
+  }
+  .younggirl > div > h4 {  
+    font-size: 25px;
+     width: 400px ;
+    margin-bottom: 16px;
+  }
+  .younggirl > div > p {
+    font-size: 16px ;
+    width: 400px ;
+    margin-bottom: 24px;
+  }
+  .book-now {
+    width: 200px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #ffd700;
+    border: none;
+    border-radius: 6px;
+    color: #103733;
+    cursor: pointer;
+  }
+  .manmount {
+    height: auto;
+    padding: 60px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .manmount > div {
+    width: 550px;
+    padding: 0;
+  }
+  .manmount > div >h4 {
+    font-size: 25px;
+    line-height: 1.4;
+    margin-top: 40px;
+     width: 500px;
+  }
+  .manmount > div > p {
+    font-size: 12px;
+    width: 500px;
+     margin-top: -30px;
+  }
+  .mainhead > h2{
+        width: 100px;
+        margin-left: -60px;
+  }
+  .cards-grid > .cards{
+        margin-top: -70px;
+  }
+  .book-now {
+    width:200px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #ffd700;
+    border: none;
+    border-radius: 6px;
+    color: #103733;
+    cursor: pointer;
+  }
+   .rooms {
+    padding: 40px 16px;
+  }
+  .subtitle,
+  .rooms h1,
+  .description {
+    text-align: center;
+    margin-left: 0 ;
+  }
+  .subtitle {
+    font-size: 18px;
+  }
+  .rooms h1 {
+    font-size: 28px ;
+    line-height: 1.3;
+    margin-top: 8px;
+  }
+  .description {
+    font-size: 16px;
+    margin: 16px 0 24px;
+  }
+  .nav-row {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+  .nav-links a {
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 4px; 
+  }
+  .card-grids {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    margin-top: 32px;
+  }
+  .card {
+    width: 300px;
+    height: 400px;
+  }
+  .card img {
+    width: 300px;
+    height: 200px;
+  }
+  .card-body {
+    padding: 16px;
+  }
+  .card-body h2 {
+    font-size: 20px ;
+  }
+  .card-body p {
+    font-size: 16px ;
+  }
+  .card-body button {
+    width: 200px;
+    font-size: 16px;
+    padding: 12px;
+  }
+}
