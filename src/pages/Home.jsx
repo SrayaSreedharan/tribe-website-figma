@@ -24,6 +24,8 @@ import stonebalance from '../images/stonebalance.jpg';
 import rock from '../images/rockpoint.jpg';
 import lake from '../images/lakeview.png';
 import kandi from '../images/900kandi.png';
+import logos from '../images/Layer2.png';
+
 
 const Home = () => {
   const cardData = [
@@ -268,7 +270,52 @@ const Home = () => {
     </div>
   </section>
    </section>
+    <div className='last-container-bg'>
+      <div>
+        <h2>Where Will Your Journey Take You ?</h2>
+        <p>Jump into the wild and leave the daily grind behind.</p>
+        <button className='book-now'>View accomadation</button>
       </div>
+    </div>
+   <footer className="footer">
+  <div className="footer-content">
+    <div className="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Home Page</a></li>
+        <li><a href="#">Stays</a></li>
+        <li><a href="#">Trips</a></li>
+        <li><a href="#">Activities</a></li>
+      </ul>
+    </div>
+    <div className="footer-center">
+      <img src={logos} alt="Suelto Tribe Logo" className="footer-logo" />
+      <h4>Our Location</h4>
+      <p>Nestled in the heart of 900 Kandi Forest wayanad</p>
+      <h4>Contact Number</h4>
+      <p>+91 3333444666 | +918887775554</p>
+      <div className="social-icons">
+        <i className="fab fa-whatsapp"></i>
+        <i className="fab fa-facebook"></i>
+        <i className="fab fa-instagram"></i>
+        <i className="fab fa-x-twitter"></i>
+      </div>
+    </div>
+    <div className="footer-section">
+      <h3>About Us</h3>
+      <ul>
+        <li><a href="#">Who We Are</a></li>
+        <li><a href="#">Who We Cater To</a></li>
+        <li><a href="#">Our Values</a></li>
+        <li><a href="#">Our Mission</a></li>
+      </ul>
+    </div>
+  </div>
+  <div className="footer-bottom">
+    <p>Copyright © 2025 Suelotribe</p>
+  </div>
+</footer>
+   </div>
   </>
   )
 }

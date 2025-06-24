@@ -1,5 +1,6 @@
 import React from 'react'
 import '../component/Navbar.css'
+import logos from '../images/Layer2.png';
 
 const Navbar = () => {
   return (
@@ -13,7 +14,7 @@ const Navbar = () => {
   <div className='containers'>
   <header className="navbars">
     <div className="logo">
-      SUELO <span className="spiral">🌀</span> TRIBE
+      <img src={logos}></img>
     </div>
     <nav className="nav-link">
       <a href="#">Home</a>
