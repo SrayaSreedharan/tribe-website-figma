@@ -67,8 +67,8 @@ body {
         background-color: #fcd21c;
         color: #103733;
         border: none;
-        height: Hug (59px);
-        width:Hug (216px);
+        min-height: Hug (59px);
+        max-width:Hug (216px);
         padding-top: 16px;
         padding-right: 64px;
         padding-left: 64px;

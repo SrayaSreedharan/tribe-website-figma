@@ -1,7 +1,7 @@
 .stay-card {
   background: white;
   border: 1px solid #d6e8df;
-  width: 321.13px;
+  max-width: 321.13px;
   min-height: 519px;
   display: flex;
   flex-direction: column;
@@ -15,8 +15,8 @@
     padding-bottom: 120px;
     padding-left: 160px;
     h2{
-        width: 800px;
-        height: 32px;
+        max-width: 800px;
+        min-height: 32px;
         color: #103733;
         font-family: 'Dela Gothic One', sans-serif;
         font-weight: 400;
@@ -24,24 +24,23 @@
         letter-spacing: 1.5%;  
     }
     p{
-        height: 43px;
-        width: 800px;
+        min-height: 43px;
+        max-width: 800px;
         font-weight: 400px;
         font-size: 22px;
         font-family: 'Inter', sans-serif;  
     } 
 }
 .stay-card img {
-   width: 321.13px;
-   height: 196px;
+   max-width: 321.13px;
+   min-height: 196px;
    display: flex;
 }
 .card-content {
-  padding-top: 40px;
-  padding-right: 32px;
-  padding-left: 32px;
+  text-align: center; 
   display: flex;
   flex-direction: column;
+  align-items: center; 
 }
 .card-content h3 {
   font-family: 'Dela Gothic One', sans-serif;
@@ -54,9 +53,10 @@
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   font-weight: 400;
+ 
   color: #444;
-  height: 69px;
-  width: 257.13px;
+  min-height: 69px;
+  max-width: 257.13px;
 }
 .card-content button {
     background-color: #ffd700;
@@ -64,10 +64,7 @@
     color: #000;
     height: 54px;
     width: 169.32px;
-    padding-left: 40;
-    padding-top: 23px;
-    padding-bottom: 23px;
-    padding-right: 40px;
+    
     font-weight: 600;
     font-size:18px ;
     gap: 10px;
@@ -103,12 +100,99 @@
   justify-content: center; 
   gap: 10px;               
 }
-@media (max-width: 600px) {
-  .stay-options > p{
-    width: 500px;
-    font-size: 12px;
-    margin-left: -80px;
+.stay-optionss{
+    background-color:#D0D6BC;
+    min-height: 742px;
+    padding-top: 120px;
+    padding-right: 160px;
+    padding-bottom: 120px;
+    padding-left: 160px;
+    h2{
+        max-width: 800px;
+        min-height: 32px;
+        color: #103733;
+        font-family: 'Dela Gothic One', sans-serif;
+        font-weight: 400;
+        font-size: 44px;
+    }
+    p{
+        min-height: 43px;
+        max-width: 800px;
+        font-weight: 400px;
+        font-family: 'Inter', sans-serif;  
+    } 
+    .stay-card{
+      max-width: 410px;
+          min-height: 386px;
+    }
+    .stay-card img{
+      max-width:410px;
+          min-height: 196px;
+          object-fit: cover;
+          object-position: top;
+    }
+}
+.card-containerss{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;                       
+  justify-content: center; 
+  gap: 10px;               
+}
+.view-option{
+    background-color:#D0D6BC;
+    
+        min-height: 547px;
+    h2{
+        max-width: 800px;
+        min-height: 32px;
+        color: #103733;
+        font-family: 'Dela Gothic One', sans-serif;
+        font-weight: 400;
+        font-size: 44px;
+        letter-spacing: 1.5%;  
+    }
+    p{
+        min-height: 43px;
+        max-width: 800px;
+        font-weight: 400px;
+        font-family: 'Inter', sans-serif;  
+    } 
+    .stay-card{
+      max-width: 410px;
+          min-height: 386px;
+    }
+    .stay-card img{
+      
+          object-position: top;
+          max-width: 507px;
+        max-height: 290px;
+        object-fit: cover;
+    }
+    
   }
+  .card-container-view{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;                       
+  justify-content: center; 
+  gap: 100px;               
+}
+@media (max-width: 600px) {
+    .stay-optionss > .card-containerss{
+      margin: 0 auto;
+    }
+    .stay-options > p{
+        max-width: 500px;
+        font-size: 12px;
+        margin-left: -80px;
+    }
+    .stay-option > h2{
+            max-width: 800px;
+            min-height: 32px;
+            color: #103733;
+            font-family: 'Dela Gothic One', sans-serif; 
+    }
   .card-container{
      flex-direction: column;
     align-items: center;

@@ -101,11 +101,56 @@ const Home = () => {
       description:'Discover the magic of cascading waterfalls hidden in the forest. Dip into crystal-clear waters and rejuvenate your soul with nature’s purest elements.'
     },
   ]
+
+  const cardsData = [
+    {
+      image: family,
+      title: 'Families',
+      description:'Enjoy a family getaway filled with nature walks, wildlife spotting, and bonding over campfires.'
+    },
+    {
+      image: couple,
+      title: 'Couples',
+      description:'Find romantic seclusion with scenic views and peaceful surroundings, ideal for rekindling your connection.'
+    },
+    {
+      image: friends,
+      title: 'Bachelors & Friends Groups',
+      description:'Take a break from routine and create unforgettable memories with friends, exploring trails and gathering around bonfires.'
+    },
+    {
+      image: collage,
+      title: 'College Trips',
+      description:'A perfect destination for college groups, SueloTribe offers adventure, nature, and team activities to bring students closer to nature.'
+    },
+    {
+      image: day,
+      title: 'Day Trips',
+      description:'Short on time? Plan a day trip to experience the essence of Wayanad, complete with guided nature walks, scenic viewpoints, and refreshing picnic spots.'
+    },
+  ]
+
+  const cardsDatas = [
+    {
+      image: rock,
+      title: 'Rock Point Site',
+      description:'900 / a day'
+    },
+    {
+      image: lake,
+      title: 'Pookode Lake View',
+      description:'1200 per person'
+    },
+    {
+      image: kandi,
+      title: '900 Kandi Stay',
+      description:'900 a night'
+    }
+  ]
   return (
     <>
     <div className='containers'>
     <div className='home'>
-          
         <Navbar/>
         <div className='txt-explor'>
         <h1>Explore.{<br></br>}Experience. Evolve.</h1>
@@ -134,10 +179,14 @@ const Home = () => {
           <p>Located in the heart of<span> Wayanad’s stunning landscape, SueloTribe</span> offers you an immersive experience in the lap of nature. Surrounded by cardamom plantations, dense forests, and misty hills, our retreat is perfect for anyone looking to escape the hustle and bustle of city life.</p>
       </div>
     </div>
+    </div>
+    <div className='containers'>
     <div className='ourvision'>
         <h3>Our Vision</h3>
         <p>To lead the way in responsible tourism by fostering deep connections between people and nature, creating a sustainable and mindful travel community that respects and preserves the planet’s beauty.</p>
     </div>
+    </div>
+    <div className='containers'>
     <div className='list-item'>
       <div>
           <img src={frame84} height="451" width="640"></img>
@@ -152,13 +201,17 @@ const Home = () => {
         </ul>
       </div>
     </div>
+    </div>
+    <div className='containers'>
     <div className='younggirl'>
       <div >
       <h4>NOW IS <span className="outlined"> YOUR</span> TIME</h4>
-      <p>Escape to nature, create unforgettable memories, and let every trip be a story worth telling. Book your adventure today!"</p>
-      <button className="book-now">Book Now →</button>
+      <p style={{minHeight:'44px',maxWidth:'799px'}}>Escape to nature, create unforgettable memories, and let every trip be a story worth telling. Book your adventure today!"</p>
+      <button className="book-now" >Book Now →</button>
       </div>
     </div>
+    </div>
+    <div className='containers'>
     <section className="stay-options">
           <h2>Stay Options</h2>
           <p >Explore unique accommodation options tailored to make your stay memorable and comfortable:</p>
@@ -173,47 +226,34 @@ const Home = () => {
             ))}
           </div>
         </section>
-  <div className="cater-section">
-        <div className='mainhead'>
-            <h2>Who We Cater To</h2>
-            <p>At SueloTribe, we welcome</p>
         </div>
-    <div className="cards-grid">
-      <div className="cards">
-        <img src={family} alt="Families" />
-        <h3>Families</h3>
-        <p>Enjoy a family getaway filled with nature walks, wildlife spotting, and bonding over campfires.</p>
-      </div>
-      <div className="cards">
-        <img src={couple} alt="Couples" />
-        <h3>Couples</h3>
-        <p>Find romantic seclusion with scenic views and peaceful surroundings, ideal for rekindling your connection.</p>
-      </div>
-      <div className="cards">
-        <img src={friends} alt="Families" />
-        <h3>Bachelors & Friends Groups</h3>
-        <p>Take a break from routine and create unforgettable memories with friends, exploring trails and gathering around bonfires.</p>
-      </div>
-      <div className="cards">
-        <img src={collage} alt="Families" />
-        <h3>College Trips</h3>
-        <p>A perfect destination for college groups, SueloTribe offers adventure, nature, and team activities to bring students closer to nature.</p>
-      </div>
-      <div className="cards">
-        <img src={day} alt="Families" />
-        <h3>Day Trips</h3>
-        <p>Short on time? Plan a day trip to experience the essence of Wayanad, complete with guided nature walks, scenic viewpoints, and refreshing picnic spots.</p>
-      </div>
-    </div>
-  </div>
+     <div className='containers'>
+    <section className="stay-optionss">
+          <h2>Who We Cater To</h2>
+          <p>At SueloTribe, we welcome</p>
+          <div className="card-containerss">
+            {cardsData.map((card, index) => (
+              <StayCard
+                key={index}
+                image={card.image}
+                title={card.title}
+                description={card.description}
+                showButton={false}
+              />
+            ))}
+          </div>
+        </section>
+        </div>
+  <div className='containers'>
   <div className='manmount'>
       <div>
       <h4>Activities To Elevate Your Stay</h4>
-      <p>From trekking and river crossing to bird watching and campfires, our variety of activities will give you the opportunity to connect with nature and experience the wild beauty of Wayanad like never before.</p>
-      <p>Come, join SueloTribe and become part of a community that celebrates responsible tourism and sustainable living. Let us show you the wonders of Wayanad—your unforgettable adventure awaits!</p>
+      <p>From trekking and river crossing to bird watching and campfires, our variety of activities will give you the opportunity to connect with nature and experience the wild beauty of Wayanad like never before.{<br></br>}Come, join SueloTribe and become part of a community that celebrates responsible tourism and sustainable living. Let us show you the wonders of Wayanad—your unforgettable adventure awaits!</p>
       <button className="book-now">Book Now →</button>
       </div>
   </div>
+  </div>
+  <div className='containers'>
   <section className="stay-option">
           <h2>Our Activities</h2>
           <div className="card-containers">
@@ -230,6 +270,7 @@ const Home = () => {
   </section>
   </div>
   <div className='containers'>
+  <div className='containers'>
    <section className="rooms">
     <p className="subtitle">Plan Your Next Stay</p>
     <h1>Experience the Great{<br></br>}Outdoors</h1>
@@ -243,33 +284,23 @@ const Home = () => {
         <a href="#">Tents</a>
       </div>
     </div>
-  <section className="card-grids">
-    <div className="card">
-      <img src={rock} alt="Rock Point Site"/>
-      <div className="card-body">
-        <h2>Rock Point Site</h2>
-        <p>₹ 900 / a day</p>
-        <button>View Site →</button>
-      </div>
-    </div>
-    <div className="card">
-      <img src={lake} alt="Pookode Lake View"/>
-      <div className="card-body">
-        <h2>Pookode Lake View</h2>
-        <p>₹ 1200 per person</p>
-        <button>View Site →</button>
-      </div>
-    </div>
-    <div className="card">
-      <img src={kandi} alt="900 Kandi Stay"/>
-      <div className="card-body">
-        <h2>900 Kandi Stay</h2>
-        <p>₹ 900 / a night</p>
-        <button>View Site →</button>
-      </div>
-    </div>
+  <div className='containers'>
+  <section className="view-option">
+          <div className="card-container-view">
+            {cardsDatas.map((card, index) => (
+              <StayCard
+                key={index}
+                image={card.image}
+                title={card.title}
+                description={card.description}
+                showButton={false}
+              /> 
+            ))}
+          </div>
   </section>
+  </div>
    </section>
+   <div className='containers'>
     <div className='last-container-bg'>
       <div>
         <h2>Where Will Your Journey Take You ?</h2>
@@ -277,6 +308,8 @@ const Home = () => {
         <button className='book-now'>View accomadation</button>
       </div>
     </div>
+    </div>
+     <div className='containers'>
    <footer className="footer">
   <div className="footer-content">
     <div className="footer-section">
@@ -315,6 +348,8 @@ const Home = () => {
     <p>Copyright © 2025 Suelotribe</p>
   </div>
 </footer>
+   </div>
+    </div>
    </div>
   </>
   )

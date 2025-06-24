@@ -12,12 +12,19 @@
   font-weight: bold;
   font-style: normal;
 }
+html, body {
+  overflow-x: hidden;  
+}
 body{
     background-color:black;
-    margin: 0 auto;
+}
+.containers{
+          max-width: 1600px;
+          margin: 0 auto;
 }
 .home{
     background-image:url('../images/Maskgroup.webp');
+    max-width: 100%;
     background-size: cover;
     background-position: center;
     min-height: 902px;  
@@ -34,11 +41,10 @@ h1{
     margin-top: 120px;
 }
 .txt-explor{
-    height: 179px;
-    width: 1125px;
+    min-height: 179px;
+    max-width: 1125px;
     margin-left: 100px;
-    gap: 160px;
-    
+    gap: 160px;   
 }
 .view{
   font-size: 24px;
@@ -47,24 +53,26 @@ h1{
   font-family: 'Inter', sans-serif;
   color: #103733;
   border: none;
-  height: 80px;
-  width:413.32px;
+  min-height: 80px;
+  max-width:413.32px;
   margin-right: 60px;
   font-weight: bold;
   margin-top: 50px;
 }
 .txt-para{
-    height: 439px;
-    width: 720px;
+    min-height: 439px;
+    max-width: 720px;
     gap: 56px;
+    margin-top: 40px;
+    
     p{
-        height: 178px;
-        width: 720px;
+        min-height: 178px;
+        max-width: 720px;
         font-family: 'Inter', sans-serif;
         font-weight: 400;
-        font-size: 22px;
-        line-height: 100%;
-        line-height: 32.7px        
+        
+       
+              
     }
 }
 h2{
@@ -77,17 +85,13 @@ h2{
 .second-sect{
     display: flex;
     justify-content: center;
-    padding-top: 120px;
-    padding-right: 160px;
-    padding-bottom: 120px;
-    padding-left: 160px;
     gap: 30px;
     background-color: #D0D6BC;
     min-height: 691px;
 }
 .btn-3{
-    width: 370px;
-    height: 68px;
+    max-width: 370px;
+    min-height: 68px;
     font-family: 'Inter', sans-serif;
     background-color: #FFD323;
     font-weight: 600;
@@ -96,11 +100,6 @@ h2{
     letter-spacing: 0.3%;
     color: #103733;
     gap: 16px;
-    padding-top: 16px;
-    padding-right: 64px;
-    padding-bottom: 16px;
-    padding-left: 64px;
-    margin-top: 70px;
     border: none;
 }
 .container > div{
@@ -115,7 +114,7 @@ h2{
         margin: auto;
         text-align: center;
         min-height: 255px;
-        width: 1181px;
+        max-width: 1181px;
         gap: 56px;
     }
     span{
@@ -125,10 +124,6 @@ h2{
 .ourvision{
     min-height: 451px;
     justify-content: space-between;
-    padding-top: 120px;
-    padding-right: 160px;
-    padding-bottom: 120px;
-    padding-left: 160px;
     background-color: #103733;
     display: flex;
     justify-content: center;   
@@ -141,8 +136,8 @@ h2{
             font-weight: 400;
             font-size: 56px;
             gap: 24px;
-            width: 715px;
-            height: 41px;
+            max-width: 715px;
+            min-height: 41px;
             line-height: 100%;
             text-align: center;   
             text-align: center;
@@ -151,8 +146,8 @@ h2{
             font-weight: 400;
             font-family: 'Euclid Circular A', sans-serif;
             font-size: 22px;
-            height: 72px;
-            width: 715px;
+            min-height: 72px;
+            max-width: 715px;
             text-align: center;
             text-align: justify;
             color: white;
@@ -162,22 +157,18 @@ h2{
     display: flex;
     align-items: center;        
     justify-content: center; 
-    padding-top: 120px;
-    padding-right: 160px;
-    padding-bottom: 120px;
-    padding-left: 160px;
     min-height: 691px;
     gap: 30px;
     background-color: #D0D6BC;
     list{
         gap: 56px;
-        height: 418px;
-        width: 720px;  
+        min-height: 418px;
+        max-width: 720px;  
     }
 }
 ul{
-    height: 330px;
-    width: 720px;
+    min-height: 330px;
+    max-width: 720px;
 }
 ul > li{
    font-family: 'Inter', sans-serif;
@@ -190,13 +181,12 @@ ul > li:not(:last-child) {
 }
 .younggirl{
     background: linear-gradient(#00000099, #00000099), url('../images/younggirl.jpg');
-    width: 100%;
+    max-width: 100%;
     position: relative;
-    object-fit: cover;   
     min-height: 560px;
     background-size: cover;
     background-position: center;
-    padding-top: 109px;
+    padding-top: 109px;  
 }
 .outlined {
          font-weight: 800;
@@ -204,18 +194,18 @@ ul > li:not(:last-child) {
         -webkit-text-stroke: 2px white;
 }
 .younggirl > div{
-    height: 224px;
-    width: 799px;
-    padding-left: 661px;
+  display: grid;
+  place-items: center end;
+  margin-right: 130px;
     h4{
             font-family: 'Dela Gothic One', sans-serif;
             color: white;
             font-weight: 400;
             font-size: 56px;
             gap: 24px;
-            width: 715px;
-            height: 41px;
-            letter-spacing: 2%;
+            max-width: 715px;
+            min-height: 41px;
+            letter-spacing: 2%;       
     }
     p{
             font-weight: 400;
@@ -227,80 +217,18 @@ ul > li:not(:last-child) {
             text-align: justify;
             color: white; 
     }
-}
-.cater-section {
-        min-height: 1324px;
-        padding-top: 120px;
-        padding-right: 160px;
-        padding-bottom: 120px;
-        padding-left: 160px;
-        background-color: #D0D6BC;
-}
-.mainhead{
-        height: 104px;
-        width: 800px;
-        gap: 56px;
-        p{
-           font-family: 'Inter', sans-serif;
-           font-weight: 400;
-           font-size: 22px; 
-           color: #676767;
-        }
-}        
-.cater-section > .mainhead > h2 {
-          font-family: 'Dela Gothic One', sans-serif;
-          color: #0b3c35;
-          font-weight: 400;
-          width: 800px;
-          height: 32px;
-          letter-spacing: 1.5;
-}
-.cards-grid {
-          display: flex;
-          margin: 0 auto; 
-          flex-wrap: wrap;
-          max-width:1600px;
-          min-height: 868px;
-          gap: 10px;
-          margin-top: 120px;
-}
-.cards {
-          background: white;
-          box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-          overflow: hidden;
-          width: 410px;
-          min-height: 386px;
-}
-.cards img {
-          width:410px;
-          height: 196px;
-          object-fit: cover;
-          object-position: top;
-}
-.cards h3 {
-          font-family: 'Dela Gothic One', sans-serif;
-          margin: 1rem;
-          color: #0b3c35;
-}
-.cards p {
-        font-family: 'Inter', sans-serif;
-        color: #676767;
-        margin: 15px;
-        font-size: 16px;
-        height: 31px;
-        font-weight: 400;
-        max-width:399.33px;
+   
 }
 .manmount{
         background: linear-gradient(#00000099, #00000099), url('../images/manmounting.jpg');
-        height: 658px;
+        min-height: 658px;
         object-position: top;
         position: relative;
         background-size: cover;
         background-position: center;  
 }
 .manmount > div {
-        width: 799px;
+        max-width: 799px;
         min-height: 445px;
         padding-top: 109px;
         padding-left: 160px;
@@ -318,8 +246,8 @@ ul > li:not(:last-child) {
              font-family: 'Euclid Circular A', sans-serif;
              font-weight: 400px;
              font-size: 22px;
-             width: 799px;
-             height: 72px;
+             max-width: 799px;
+             min-height: 72px;
              color: #FFFFFF;
              line-height: 1.3;
         }
@@ -359,53 +287,15 @@ ul > li:not(:last-child) {
 .nav-links {
         display: flex;
         margin-left: 600px;
-         align-items: center;
+        align-items: center;
         gap: 24px;  
 }
 .nav-links a{
         text-decoration: none;
         color: #676767;
-         align-items: center;
+        align-items: center;
         padding: 8px;
         font-family: 'Inter', sans-serif;
-}
-.card-grids {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        width: 1600px;
-        min-height: 547px;
-        gap: 40px;
-        margin-top: 120px;
-}
-.card {
-        background: white;
-        background: white;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        overflow: hidden;
-        width: 410px;
-        height: 460px;
-  
-}
-.card img {
-        width: 507px;
-        max-height: 290px;
-        object-fit: cover;
-}
-.card-body {
-        padding: 1rem;
-        width: 507px;
-        max-height:227px;
-}
-.card-body h2 {
-        font-size: 1.1rem;
-        font-weight: bold;
-        margin-bottom: 0.5rem;
-}
-.card-body p {
-        color: #1a2c23;
-        font-size: 0.95rem;
-        margin-bottom: 1rem;
 }
 button {
         background: #ffd700;
@@ -423,13 +313,13 @@ button {
         background-size: cover;
         background-position: center;  
         div{
-          width: 799px;
+          max-width: 799px;
           min-height: 277px;
           padding-top: 171px;
           padding-left: 160px;
                 h2{
-                  width: 715px;
-                  height: 122px;
+                  max-width: 715px;
+                  min-height: 122px;
                   font-size:56px;
                   font-weight: 400;
                   font-family: 'Dela Gothic One', sans-serif;
@@ -489,7 +379,7 @@ button {
         margin-top: 45px;
 }
 .footer-logo {
-        height: 60px;
+        min-height: 60px;
         margin-bottom: 15px;
 }
 .footer-center h4 {
@@ -515,6 +405,7 @@ button {
         color: #aaa;
 }
 @media (max-width: 600px) {
+ 
   .second-sect {
     flex-direction: column;
     align-items: center;
@@ -523,7 +414,7 @@ button {
     height: auto;
   }
   .txt-para {
-    width: 100%;
+    max-width: 100%;
     padding: 0 10px;
     text-align: center;
   }
@@ -533,26 +424,27 @@ button {
   .text-para p {
     font-size: 10px;
     line-height: 1.5;
-    width: 550px;
-    height: 120px;
+    max-width: 550px;
+    min-height: 120px;
   }
   .btn-3 {
     margin-top: -100px;
-   width: 300px;
-    height: 48px;
+   max-width: 300px;
+    min-height: 48px;
     font-size: 16px;
   }
   .second-sect img {
-    width: 100%;
+    max-width: 100%;
     margin-top: -150px;
-    height: 300px;
+    min-height: 300px;
   }
   .container > div > p{
-        width: 500px;
-        font-size: 22px;
+        max-width: 500px;
+        font-size: 20px;
   }
   .ourvision> p{
-         width: 500px;
+         max-width: 500px;
+         margin: 0 12px;
   }
   .list-item {
     flex-direction: column;
@@ -562,11 +454,11 @@ button {
     height: auto;
   }
   .list-item img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
   }
   .list {
-    width: 100%;
+    max-width: 100%;
     padding: 0 10px;
   }
   .list h2 {
@@ -581,32 +473,31 @@ button {
     font-size: 16px ;
     line-height: 1.5;
     margin-bottom: 16px;
-    width: 500px;
+    max-width: 500px;
   }
   .younggirl {  
     height: auto ;
-    padding: 60px 16px ;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
   .younggirl > div {
-    width: 400px;
-    padding: 0; 
+    max-width: 400px;
   }
   .younggirl > div > h4 {  
     font-size: 25px;
-     width: 400px ;
+     max-width: 400px ;
+     text-align: center;
     margin-bottom: 16px;
   }
   .younggirl > div > p {
-    font-size: 16px ;
-    width: 400px ;
+    font-size: 15px ;
+    max-width: 400px ;
     margin-bottom: 24px;
   }
   .book-now {
-    width: 200px;
+    max-width: 200px;
     padding: 12px;
     font-size: 16px;
     font-weight: bold;
@@ -617,7 +508,6 @@ button {
     cursor: pointer;
   }
   .manmount {
-    height: auto;
     padding: 60px 16px;
     display: flex;
     justify-content: center;
@@ -625,26 +515,24 @@ button {
     text-align: center;
   }
   .manmount > div {
-    width: 550px;
+    max-width: 550px;
     padding: 0;
   }
   .manmount > div >h4 {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 1.4;
     margin-top: 40px;
-     width: 500px;
+    max-width: 500px;
   }
   .manmount > div > p {
-    font-size: 12px;
-    width: 500px;
-     margin-top: -30px;
+    margin-top: -30px;
   }
   .mainhead > h2{
-        width: 100px;
-        margin-left: -60px;
+      max-width: 100px;
+      margin-left: -60px;
   }
   .book-now {
-    width:200px;
+    max-width:200px;
     padding: 12px;
     font-size: 16px;
     font-weight: bold;
@@ -693,16 +581,16 @@ button {
     flex-direction: column;
     align-items: center;
     gap: 24px;
-    width: 100%;
+    max-width: 100%;
     margin-top: 32px;
   }
   .card {
-    width: 300px;
-    height: 400px;
+    max-width: 300px;
+    min-height: 400px;
   }
   .card img {
-    width: 300px;
-    height: 200px;
+    max-width: 300px;
+    min-height: 200px;
   }
   .card-body {
     padding: 16px;
@@ -714,27 +602,28 @@ button {
     font-size: 16px ;
   }
   .card-body button {
-    width: 200px;
+    max-width: 200px;
     font-size: 16px;
     padding: 12px;
   }
   .footer-content{
     flex-direction: column;
     margin-left: 30px;
-    
   }
   .footer-center{
-    margin-left: -280px;
+    margin-left: -60px;
+    margin-top: -70px;
+    margin-bottom: 30px;
   }
   .footer-section{
-    margin-left: 80px;
+    margin-left: 150px;
   }
   .last-container-bg > div > h2{
-    width: 400px;
-    font-size: 26px;
-    
+    max-width: 400px;
+    font-size: 26px; 
   }
   .last-container-bg > div > p{
-    width: 400px;
+    max-width: 400px;
   }
+  
 }
