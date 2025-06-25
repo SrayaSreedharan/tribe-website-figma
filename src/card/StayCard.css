@@ -1,11 +1,11 @@
 .stay-card {
-  background: white;
-  border: 1px solid #d6e8df;
-  max-width: 321.13px;
-  min-height: 519px;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    background: white;
+    border: 1px solid #d6e8df;
+    max-width: 321.13px;
+    min-height: 519px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 .stay-options{
     background-color: #F7F8F4;
@@ -32,31 +32,30 @@
     } 
 }
 .stay-card img {
-   max-width: 321.13px;
-   min-height: 196px;
-   display: flex;
+    max-width: 321.13px;
+    min-height: 196px;
+    display: flex;
 }
 .card-content {
-  text-align: center; 
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 }
 .card-content h3 {
-  font-family: 'Dela Gothic One', sans-serif;
-  margin-bottom: 10px;
-  font-size: 24px;
-  font-weight: 400;
-  color: #003b2b;
+    font-family: 'Dela Gothic One', sans-serif;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #003b2b;
 }
 .card-content p {
-  font-family: 'Inter', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
- 
-  color: #444;
-  min-height: 69px;
-  max-width: 257.13px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #444;
+    min-height: 69px;
+    max-width: 257.13px;
 }
 .card-content button {
     background-color: #ffd700;
@@ -64,18 +63,17 @@
     color: #000;
     height: 54px;
     width: 169.32px;
-    
     font-weight: 600;
     font-size:18px ;
     gap: 10px;
     margin-top: 18px;
 }
 .card-container{
-  display: flex;
-  flex-direction: row;
-  justify-content: center; 
-  gap: 10px;               
-  padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    gap: 10px;               
+    padding: 20px;
 }
 .stay-option{
     background-color: #F7F8F4;
@@ -83,8 +81,8 @@
     padding-top: 120px;
     padding-bottom: 120px;
     h2{
-        width: 800px;
-        height: 32px;
+        max-width: 800px;
+        min-height: 32px;
         color: #103733;
         font-family: 'Dela Gothic One', sans-serif;
         font-weight: 400;
@@ -94,11 +92,11 @@
     }
 }
 .card-containers{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;                       
-  justify-content: center; 
-  gap: 10px;               
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;                       
+    justify-content: center; 
+    gap: 10px;               
 }
 .stay-optionss{
     background-color:#D0D6BC;
@@ -122,27 +120,26 @@
         font-family: 'Inter', sans-serif;  
     } 
     .stay-card{
-      max-width: 410px;
-          min-height: 386px;
+        max-width: 410px;
+        min-height: 386px;
     }
     .stay-card img{
-      max-width:410px;
-          min-height: 196px;
-          object-fit: cover;
-          object-position: top;
+        max-width:410px;
+        min-height: 196px;
+        object-fit: cover;
+        object-position: top;
     }
 }
 .card-containerss{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;                       
-  justify-content: center; 
-  gap: 10px;               
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;                       
+    justify-content: center; 
+    gap: 10px;               
 }
 .view-option{
     background-color:#D0D6BC;
-    
-        min-height: 547px;
+    min-height: 547px;
     h2{
         max-width: 800px;
         min-height: 32px;
@@ -159,28 +156,27 @@
         font-family: 'Inter', sans-serif;  
     } 
     .stay-card{
-      max-width: 410px;
-          min-height: 386px;
+        max-width: 410px;
+        min-height: 386px;
     }
     .stay-card img{
-      
-          object-position: top;
-          max-width: 507px;
+        object-position: top;
+        max-width: 507px;
         max-height: 290px;
         object-fit: cover;
     }
     
   }
   .card-container-view{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;                       
-  justify-content: center; 
-  gap: 100px;               
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;                       
+      justify-content: center; 
+      gap: 100px;               
 }
 @media (max-width: 600px) {
     .stay-optionss > .card-containerss{
-      margin: 0 auto;
+          margin: 0 auto;
     }
     .stay-options > p{
         max-width: 500px;
@@ -188,14 +184,17 @@
         margin-left: -80px;
     }
     .stay-option > h2{
-            max-width: 800px;
-            min-height: 32px;
-            color: #103733;
-            font-family: 'Dela Gothic One', sans-serif; 
+        max-width: 800px;
+        min-height: 32px;
+        color: #103733;
+        font-family: 'Dela Gothic One', sans-serif; 
     }
   .card-container{
-     flex-direction: column;
-    align-items: center;
+        flex-direction: column;
+        align-items: center;
   }
+  .view-option > .card-container-view {
+        margin: 0 20px;
+    }
 }
 
