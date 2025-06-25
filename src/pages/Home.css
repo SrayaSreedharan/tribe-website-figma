@@ -209,13 +209,25 @@ ul > li:not(:last-child) {
         font-weight: 400;
         font-family: 'Euclid Circular A', sans-serif;
         font-size: 22px;
-        height: 44px;
-        width: 700px;
+        min-height: 44px;
+        max-width: 600px;
         text-align: center;
         text-align: justify;
         color: white; 
     }
-   
+    .btn-2{
+        max-width: 370px;
+        min-height: 68px;
+        font-family: 'Inter', sans-serif;
+        background-color: #FFD323;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 150%;
+        letter-spacing: 0.3%;
+        color: #103733;
+        gap: 16px;
+        border: none;
+    } 
 }
 .manmount{
         background: linear-gradient(#00000099, #00000099), url('../images/manmounting.jpg');
@@ -403,6 +415,12 @@ button {
         color: #aaa;
 }
 @media (max-width: 600px) {
+        .txt-explor > h1{
+          font-size: 28px;
+        }
+        .view{
+          font-size: 20px;
+        }
           .second-sect {
             flex-direction: column;
             align-items: center;
@@ -492,17 +510,18 @@ button {
             font-size: 15px ;
             max-width: 400px ;
             margin-bottom: 24px;
+            margin: 0 20px;
           }
-          .book-now {
+          .btn-2 {
             max-width: 200px;
             padding: 12px;
             font-size: 16px;
             font-weight: bold;
             background-color: #ffd700;
             border: none;
-            border-radius: 6px;
             color: #103733;
             cursor: pointer;
+            margin-top: 50px;
           }
           .manmount {
             padding: 60px 16px;

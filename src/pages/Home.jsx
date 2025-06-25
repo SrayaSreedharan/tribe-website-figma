@@ -25,6 +25,7 @@ import rock from '../images/rockpoint.jpg';
 import lake from '../images/lakeview.png';
 import kandi from '../images/900kandi.png';
 import logos from '../images/Layer2.png';
+import arrow from '../images/Vector.png';
 
 
 const Home = () => {
@@ -154,7 +155,7 @@ const Home = () => {
         <Navbar/>
         <div className='txt-explor'>
         <h1>Explore.{<br></br>}Experience. Evolve.</h1>
-        <button className="view" >View Accomadation --</button>
+        <button className="view" >View Accomadation <img src={arrow}/></button>
         </div>
     </div>
     </div>
@@ -166,7 +167,7 @@ const Home = () => {
             <div className='text-para'>
             <p>SueloTribe is a nature-inspired travel company dedicated to promoting responsible tourism. We blend adventure, mindfulness, and eco-friendly experiences to create meaningful connections with the environment. Rooted in the heart of Wayanad’s lush landscapes, we offer trekking, camping, experimental stays, and mindful programs to inspire sustainable living and foster unforgettable memories.</p>
             </div>
-            <button className="btn-3" >Explore package</button>
+            <button className="btn-3" >Explore package →</button>
         </div>
         <div>
             <img src={frame83} height="451" width="640"></img>
@@ -207,7 +208,7 @@ const Home = () => {
       <div >
       <h4>NOW IS <span className="outlined"> YOUR</span> TIME</h4>
       <p style={{minHeight:'44px',maxWidth:'799px'}}>Escape to nature, create unforgettable memories, and let every trip be a story worth telling. Book your adventure today!"</p>
-      <button className="book-now" >Book Now →</button>
+      <button className="btn-2" >Book Now  →</button>
       </div>
     </div>
     </div>
@@ -249,7 +250,7 @@ const Home = () => {
       <div>
       <h4>Activities To Elevate Your Stay</h4>
       <p>From trekking and river crossing to bird watching and campfires, our variety of activities will give you the opportunity to connect with nature and experience the wild beauty of Wayanad like never before.{<br></br>}Come, join SueloTribe and become part of a community that celebrates responsible tourism and sustainable living. Let us show you the wonders of Wayanad—your unforgettable adventure awaits!</p>
-      <button className="book-now">Book Now →</button>
+      <button className="btn-3" style={{marginTop:'20px'}}>Book Now →</button>
       </div>
   </div>
   </div>
@@ -305,7 +306,7 @@ const Home = () => {
       <div>
         <h2>Where Will Your Journey Take You ?</h2>
         <p>Jump into the wild and leave the daily grind behind.</p>
-        <button className='book-now'>View accomadation</button>
+        <button className='book-now'>View accomadation →</button>
       </div>
     </div>
     </div>

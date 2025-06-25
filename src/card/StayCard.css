@@ -172,7 +172,7 @@
       flex-direction: row;
       flex-wrap: wrap;                       
       justify-content: center; 
-      gap: 100px;               
+      gap: 80px;               
 }
 @media (max-width: 600px) {
     .stay-optionss > .card-containerss{

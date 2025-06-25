@@ -1,14 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../component/Navbar.css'
 import logos from '../images/Layer2.png';
 
 const Navbar = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
+    const toggleMenu = () => setMenuOpen(!menuOpen);
   return (
      <div>
    <div className="top-bar">
     <div className="contact-info">
       <span><i className="fa fa-phone" style={{color:'white'}}> +91 3336667778</i></span>
-      <span><i className="fa fa-envelope" style={{color:'white',paddingTop:'24px',paddingBottom:'24px',paddingLeft:'24px',gap:"12px",fontSize:'18px'}}>  suelotribe@gmail.com</i></span>
+      <span><i className="fa fa-envelope" style={{color:'white'}}>  suelotribe@gmail.com</i></span>
     </div>
   </div>
   <div className='containers'>
@@ -16,7 +18,10 @@ const Navbar = () => {
     <div className="logo">
       <img src={logos}></img>
     </div>
-    <nav className="nav-link">
+    <div className="hamburger" onClick={toggleMenu}>
+      &#9776;
+    </div>
+    <nav className={`nav-link ${menuOpen ? 'active' : ''}`}>
       <a href="#">Home</a>
       <a href="#">About Us</a>
       <a href="#">Explore</a>

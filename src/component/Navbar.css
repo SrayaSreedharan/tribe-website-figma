@@ -18,6 +18,12 @@ body {
         margin-top: 10px;
         margin-right: 60px;
         justify-content: center;
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        padding-top:'24px';
+        padding-bottom:'24px';
+        padding-left:'24px';
+        gap:20px;
 }
 .navbars {
         display: flex;
@@ -77,11 +83,41 @@ body {
         padding-bottom: 16px;
         margin-right: 60px;
         font-family: 'Inter', sans-serif;
-        font-size: 18px;
+        font-size: 15px;
         font-weight: bold;
         cursor: pointer;
 }
 .book-now:hover {
        background-color: #e6b800;
 }
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  .nav-link {
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+        z-index: 1000;
+  }
+  .nav-link.active {
+       display: flex;
+  }
+  .hamburger {
+       display: block;
+  }
+  .book-now {
+       display: none;
+  }
+}
+
+
 
